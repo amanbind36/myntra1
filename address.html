@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #full {
+            
+            margin-left: 6.25rem;
+            
+        }
+
+        h1 {
+            color: black;
+        }
+
+        #acontainer {
+            display: flex;
+            justify-content: space-around;
+            gap: 1.875rem;
+        }
+
+        #aleft {
+         
+            background-color: white;
+            width: 60%;
+            height: 31.25rem;
+        }
+
+        #aright {
+            
+            background-color: white;
+            width: 23%;
+            height: 31.25rem;
+            padding:1.25rem;
+        }
+
+        #acircle {
+            border-radius: 50%;
+
+            
+        }
+
+        #form1>input {
+            gap: 1.25rem;
+            margin-left: 1.25rem;
+            margin-top: 1.25rem;
+            padding: 0.625rem;
+            border-radius: 0.625rem;
+
+        }
+
+        #a,
+        #w {
+            width: 21.438rem;
+        }
+
+        #b {
+            height:5rem;
+            width: 23.438rem;
+        }
+
+        .i {
+            border-radius: 50%;
+        }
+
+        #save {
+            margin-left: 37.5rem;
+            background-color: rgb(255, 23, 68);
+            border-radius: 1.25rem;
+            color: white;
+            padding: 0.625rem;
+        }
+        #t1{
+            padding: 0.625rem;
+        }
+        /* ---------------------- */
+
+        #store1 {
+            display: flex;
+            border: 1px solid red;
+            margin: auto;
+            width: 80%;
+            height: 500px;
+        }
+
+        #store1>div {
+            width: 50%;
+            height: 100%;
+            border: 1px solid green;
+        }
+
+        #able {
+            border: 1px solid blueviolet;
+            width: 100%;
+            height: 100px;
+            
+            gap: 100px;
+        }
+
+        #f {
+            display: flex;
+            gap: 60px;
+            border: 1px solid red;
+            width: 100%;
+            height: 50%;
+        }
+        #tc,#fee{
+            margin-left: 40px;
+        }
+        #covid{
+            display: flex;
+            gap: 20px;
+        }
+        #covid>p{
+            border-radius: 50%;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        #pdetail{
+            display: flex;
+            gap: 50px;
+        }
+        #btn{
+            width: 100%;
+            padding: 10px;
+            background-color:rgb(255,23,68) ;
+        }
+        #divimg{
+            border: 1px solid red;
+            height: 150px;
+            display: flex;
+        }
+        #dimg{
+            border: 1px solid blue;
+            width: 40%;
+        }
+        #ddetail{
+            border: 1px solid blue;
+            width: 60%;
+        }
+        #dimg>img{
+            width: 100%;
+            height: 100%;
+        }
+        #ddetail>div>div{
+            gap: 10px;
+            display: flex;
+        }
+        #ddetail>div>div>p~p{
+            text-decoration: line-through;
+        }#masai{
+            padding: 10px;
+            background-color:rgb(255,23,68) ;
+            color: white;
+        }
+        #nt{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="full">
+        <h1>Checkout</h1>
+    <div  id="acontainer">
+
+        <div id="aleft">
+
+            <h3> 1. Add Shipping Address</h3>
+            <form action="" id="form1">
+                <input type="text" placeholder="FIRST NAME(REQUIRED)*">
+                <input type="text" placeholder="LAST NAME(REQUIRED)*">
+                <input type="text" placeholder="Enter your PIN code" id="w">
+                <br>
+                <input id="a" type="text" placeholder="City & district">
+                <input  type="text" oninput="home1()" name="" id="b"
+                    placeholder="FLAT/House No, Floor,  Building/Company/Apartment/Name.Road/Street Name Area,Colony.Sector,Village">
+                <br>
+                <input type="text" name="" id="a" placeholder="State">
+                <br>
+                <input type="text" name="" id="a" placeholder="Landmark">
+                <input type="text" name="" id="a" placeholder="Mobile number">
+                <input type="checkbox" name="home" id="">
+                <label for="home" class="i">Home</label>
+                <input type="checkbox" name="home" id="">
+                <label for="home" class="i">Office</label> <br>
+
+            </form>
+            <input onclick="document.location.href=`pay.html`" id="save" type="submit" value="Save & Continue">
+            <!-- <a href="pay.html">save</a> -->
+        </div>
+        <div id="r1">
+            <div>
+                <p>DONATE FOR COVID-19</p>
+                <input type="checkbox" id="">Help India fight COVID-19
+                <br>
+                <div id="covid"><p>20</p>
+                <p>50</p>
+                <p>100</p>
+                <p>200</p>
+                </div>
+            </div>
+            <div>
+                <p>COUPONS</p>
+              <select  id="masai">
+                  <option value="">Apply Coupons</option>
+                  <option value="30">Masai 30</option>
+                  <option value="40">Masai 40</option>
+                  <option value="50">Masai 50</option>
+              </select>
+              <button id="nt" onclick="offer1()">Apply</button>
+            </div>
+           
+            <p>PRICE DETAILS</p>
+            <div id="pdetail">
+                <div>
+                    <p>Total price</p>
+                    <p>Discount Price</p>
+                    <p>Coupne Discount</p>
+                    <p>Convenience Fee</p>
+                    <h3>Total Amount</h3>
+                </div>
+                <div>
+                    <p id="to1">11</p>
+                    <p id="to3" style="text-decoration: line-through;">11</p>
+                    <p>Applied</p>
+                    <p>Free</p>
+                    <h3 id="to2">2000</h3>
+                </div>
+             
+
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let bag = JSON.parse(localStorage.getItem("ttotal"))
+console.log("bag", bag)
+
+
+      document.getElementById("to1").innerText=bag;
+      document.getElementById("to2").innerText=bag;
+
+     
+
+    
+    //    var t4= document.getElementById("t2").textContent=`total amount is ${total}`
+    console.log("t:", total1);
+    var dis = 0;
+    var per = 0;
+
+
+    // t4=document.querySelector("#t2").textContent=`total is ${t2}`
+    function offer1() {
+        console.log("raam")
+        let t1 = document.querySelector("#masai").value;
+
+        if (t1 == 30) {
+            per = 30;
+            dis = 0;
+            show();
+        }
+        else if (t1 == 40) {
+            per = 40;
+            dis = 0;
+            show();
+
+        }
+        else if (t1 == 50) {
+            per = 50;
+            dis = 0;
+            show();
+        }
+        else {
+            dis = 0;
+            show();
+        }
+    }
+
+    function show(){
+        let ttt = bag;
+        console.log("total", bag)
+
+        var res = Math.ceil(((bag) / 100) * (100 - per))
+        document.querySelector("#to1").textContent ="₹"+ res;
+        document.querySelector("#to2").textContent ="₹"+ res;
+        //document.querySelector("#bagsubtotalprice").textContent = "₹"+ res;
+
+        console.log("total11", res)
+    }
+
+
+ 
+
+</script>

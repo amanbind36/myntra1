@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6d68a53abf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <style>
+         .q2 {
+            height: 12.5rem;
+            margin: auto;
+            margin-left:400px ;
+        }
+
+        #form2 {
+            width: 100%;
+            height: 12.5rem;
+
+
+        }
+
+        #form2>input,
+        #year,
+        #month {
+            border-radius: 0.625rem;
+
+        }
+
+        #card {
+            width: 18.75rem;
+            margin-right: 3.125rem;
+            padding: 0.5rem;
+            margin-top: 1.25rem;
+        }
+
+        #month1 {
+            width: 6.25rem;
+        }
+
+        #month,#year{
+            width: 12.5rem;
+            padding: 0.5rem;
+        }
+
+        #card1 {
+            padding: 0.5rem;
+        }
+
+        #sub {
+            padding: 0.5rem;
+            border-radius: 0.625rem;
+            margin-left: 6.25rem;
+            background-color: rgb(255, 23, 68);
+            color: white;
+            width: 8.125rem;
+        }
+
+        #gift {
+            display: flex;
+        }
+
+        #card2 {
+            border-radius: 0.625rem;
+        }
+
+        #im1 {
+            margin-top: 0.625rem;
+        }
+
+        #btn {
+            margin-left: 500px;
+            padding: 0.5rem;
+            border-radius: 0.625rem;
+            background-color: rgb(255, 23, 68);
+            color: white;
+            width: 8.125rem;
+        }
+
+        #masai {
+            border-radius: 0.625rem;
+        }
+
+        p {
+            font-family: sans-serif;
+        }
+
+        #right1>div {
+
+            display: flex;
+            gap: 4.375rem;
+        }
+
+        #right1>div>div {
+
+            width: 50%;
+            height: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="q2">
+        <form action="" id="form2">
+            <h3>Payment Method</h3>
+            <i class="fa fa-credit-card"> credit card</i>
+            <br>
+            <input type="text" name="" id="card" placeholder="Card Number">
+            <select name="" id="month">
+                <option id="month1" value="">Expiry Month</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="" id="year">
+                <option value="Expiry Year">Expiry Year</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2030">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+            </select>
+            <br>
+            <input type="text" name="" id="card" placeholder="Name on card">
+            <input type="text" placeholder="CVV" id="card1">
+            <!-- <a href="sucess.html"></a><input type="submit" value="Pay now" id="sub"></a> -->
+        </form>
+        <a href="sucess.html"><button id="">submit</button></a>
+
+    </div>
+</body>
+</html>
+<script type="module">
+      import navbar from ".//components/navbar.js"
+console.log("navbar", navbar)
+document.getElementById("navbar").innerHTML = navbar();
+
+//document.getElementById("sub").addEventListener("click",next);
+
+
+</script>

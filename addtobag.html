@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6d68a53abf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/addtobag.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="store">
+        <div id="left1">
+            <div id="img1"></div>
+            <div id="img3"></div>
+        </div>
+        <div id="right1">
+            <h1 id="name"></h1>
+            <p id="sname"></p>
+            <hr>
+            <div id="p">
+                <h2 id="price"></h2>
+                <p id="sprice"></p>
+
+            </div>
+            <p style="color: green;">inclusive of all taxes</p>
+            <p>SELECT SIZE</p>
+            <div id="size">
+                <p>S</p>
+                <p>M</p>
+                <p>L</p>
+                <p>XL</p>
+                <p>XXL</p>
+            </div>
+            <div id="but">
+               <button id="jay" style="background-color: rgb(255,0,109);"> <i class="fa-solid fa-bag-shopping"></i> ADD TO
+                    BAG</button>
+                <button> <i class="fa-solid fa-heart"></i> WISHLIST</button>
+            </div>
+            <h3>DELEVERY OPTIONS <i class="fa-solid fa-van-shuttle"></i></h3>
+            <input id="inp" type="number" placeholder="Enter Pin Code"><br>
+            <p class="p"> <i id="i1" class="fa-solid fa-van-shuttle"></i> Get it by next Monday</p>
+            <p class="p"><i id="i1" class="fa-solid fa-indian-rupee-sign"></i> Pay on delivery not avilable</p>
+            <p class="p"><i id="i1" class="fa-solid fa-arrow-right-arrow-left"></i> Easy 30 days return</p>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
+<script  type="module">
+   
+   
+   import navbar from ".//components/navbar.js"
+console.log("navbar", navbar)
+document.getElementById("navbar").innerHTML = navbar();
+
+let bag = JSON.parse(localStorage.getItem("bag"))
+console.log("bag", bag)
+
+
+let img1 = document.getElementById("img1");
+let img2 = document.getElementById("img3");
+
+// bag.forEach(function(el){
+let div = document.createElement("div");
+
+let img = document.createElement("img");
+img.src = bag.poster;
+
+let img5 = document.createElement("img");
+img5.src = bag.poster1;
+
+document.getElementById("name").innerText = bag.name;
+document.getElementById("sname").innerText = bag.sname;
+document.getElementById("price").innerText = `Rs ${bag.price}`;
+document.getElementById("sprice").innerText = `Rs ${bag.sprice}`;
+
+
+img2.append(img5)
+img1.append(img)
+
+
+document.getElementById("jay").addEventListener("click",jay);
+
+function jay(){
+    let bag = JSON.parse(localStorage.getItem("bag"));
+    let ans=JSON.parse(localStorage.getItem("bag1"))||[];
+    ans.push(bag)
+    console.log("bbbag",bag)
+    localStorage.setItem("bag1",JSON.stringify(ans))
+}
+
+
+
+
+
+import footer from "../components/footer.js";
+console.log("footer", footer)
+document.getElementById("footer").innerHTML = footer();
+</script>

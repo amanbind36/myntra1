@@ -1,0 +1,67 @@
+#deal {
+    margin-top: 50px;
+}
+
+#dealimg {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    overflow: hidden;
+}
+
+#categoriesimg {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    overflow: hidden;
+    margin-top: 50px;
+
+}
+
+#categories,
+#forher,#forhim ,#best,#bestimg{
+    margin-top: 50px;
+}
+
+#forherimg ,#forhimimg,#bestimg{
+    display: grid;
+    grid-template-columns: repeat(8, 12%);
+    margin-top: 50px;
+    
+}
+#forherimg>img ,#forhimimg>img,#dealimg>img{
+    width: 200px;
+}
+#bestimg>img{
+    width: 200px;
+}
+#footer{
+    margin-top: 80px;
+}
+#cont{
+    
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+}
+#cont>div{
+   
+    height: 50%;
+    width: 100%;
+}
+#upper>div,#lower>div{
+ 
+
+ height: 100%;
+ width: 12.5%;
+}
+#upper,#lower{
+    display: flex;
+}
+#upper>div>img,#lower>div>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+

@@ -1,0 +1,18 @@
+#container1{
+    
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    display: flex;
+}
+#container1>div{
+    width: 25%;
+    
+    height: 550px;
+    text-align: center;
+}
+.popular{
+    margin: auto;
+    width: 80%;
+    line-height: 40px;
+}

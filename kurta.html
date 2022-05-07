@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6d68a53abf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <style>
+        #main{
+            
+            width: 100%;
+            height: 1950px;
+        }
+        #upper1{
+            width: 100%;
+           
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        #upper1>p,h3{
+            margin-top: 70px;
+        }
+        #select{
+            height: 20px;
+            margin-top: 70px;
+        }
+        #left{
+            height: 800px;
+            
+            width: 18%;
+
+        }
+        #left>div{
+            height: 25%;
+            width: 100%;
+            
+        }
+        #cat>h3{
+          
+           margin-bottom: 10px
+        }.cat{
+            margin-left: 10px;
+        }
+        #two{
+            display: flex;
+        }
+        #right{
+            display: grid;
+            grid-template-columns: repeat(5,20%);
+            line-height: 10px;
+            
+        }
+        #right>div>img{
+            height: 300px;
+            width: 100%;
+            
+        }
+        #right>div>div{
+   display: flex;
+   gap: 40px;
+        }
+        #right>div,p{
+            margin-left: 20px;
+           
+        }
+        #right>div>div>p~p{
+            text-decoration: line-through;
+        }
+        #right>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="main">
+        <div id="upper1">
+            <h3>filters</h3>
+            <p style="color: red;">CLEAR ALL</p>
+            <P>Add-Ones</P>
+            <p>Better Cotton Initiativ</p>
+            <p>
+                Bottom type
+            </p>
+            <p>Bundles</p>
+            <p>Charters</p>
+            <p>Country of Origin</p>
+            <select name="Sort By" id="select">
+                <option value="">Sort By</option>
+                <option value="l2h">Low to high</option>
+                <option value="h2l">High to Low</option>
+            </select>
+        </div>
+            
+        <div id="two">
+            <div id="left">
+                <div class="cat">
+                    <p>CATEGORIES</p> <br>
+                    <input type="checkbox"  id=""> Sarees<br>
+                    <input type="checkbox"  id="">Kurta <br>
+                    <input type="checkbox"  id="">Kurta sets<br>
+                    <input type="checkbox"  id="">Earing<br>
+                    <input type="checkbox"  id="">Dresses<br>
+                    <input type="checkbox"  id="">Palazzos
+                </div>
+                <div>
+                    <div class="cat">
+                        <p>BRANDS</p> <br>
+                        <input type="checkbox"  id=""> Indo Era <br>
+                        <input type="checkbox"  id="">Anouk <br>
+                        <input type="checkbox"  id="">Varanga<br>
+                        <input type="checkbox"  id="">Sangria<br>
+                        <input type="checkbox"  id="">ZIYAA<br>
+                        <input type="checkbox"  id="">Kalini
+                    </div>
+                </div>
+                <div>
+                    <div class="cat">
+                        <p>CPRICE</p> <br>
+                        <input type="checkbox"  id=""> 450 Rs to Rs1000  <br>
+                        <input type="checkbox"  id="">550 Rs to Rs1000 <br>
+                        <input type="checkbox"  id="">650 Rs to Rs1000<br>
+                        <input type="checkbox"  id="">750 Rs to Rs1000<br>
+                        <input type="checkbox"  id="">850 Rs to Rs1000<br>
+                        <input type="checkbox"  id="">950 Rs to Rs1000
+                    </div>
+                </div>
+                <div>
+                    <div class="cat">
+                        <p>COLOR</p> <br>
+                        <input type="checkbox"  id=""> Green <br>
+                        <input type="checkbox"  id="">PInk <br>
+                        <input type="checkbox"  id="">Blue<br>
+                        <input type="checkbox"  id="">Red<br>
+                        <input type="checkbox"  id="">Black<br>
+                        <input type="checkbox"  id="">Maroon
+                    </div>
+                </div>
+            </div>
+            <div id="right"></div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>
+<script src="./script/kurta.js" type="module"></script>
